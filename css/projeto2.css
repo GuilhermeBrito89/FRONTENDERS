@@ -3,42 +3,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-body{
-background-color: rgb(26, 1, 26);
-color: aliceblue;
+body {
+  background-color: rgb(26, 1, 26);
+  color: aliceblue;
 }
 
+#menu {
+  height: 65px;
+  width: 100%;
+  border-bottom: solid 1px white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(26, 1, 26);
+}
 
-#logo{
+#logo {
   display: flex;
   float: left;
-  margin:auto;
-  
+  margin: auto;
+
 }
 
-#logoimg img{
+#logoimg img {
   width: 55px;
   height: 55px;
   width: fit-content;
 }
 
-#nomelogo{
+#nomelogo {
   font-size: 40px;
   font-family: 'Righteous', cursive;
   margin: auto;
   margin-left: 10px;
 }
 
-
-
-#menu{
-  height: 70px;
-  width: 100%  ;
-  border-bottom: solid 2px white;
-
-}
-
-#lista{
+#lista {
   list-style: none;
   height: 70px;
   width: 500px;
@@ -49,14 +50,14 @@ color: aliceblue;
   position: relative;
   right: 20px;
   font-family: 'Righteous', cursive;
-  
+
 }
 
-#lista li{
+#lista li {
   color: aliceblue;
 }
 
-p{
+p {
   font-family: 'Baloo 2', cursive;
   font-size: 20px;
   width: 500px;
@@ -65,30 +66,31 @@ p{
 }
 
 
-main{
-height: 100%;
-width: 100%;
+main {
+  height: 100%;
+  width: 100%;
 }
 
-#introduçao{
-margin-top: 100px;
-width: 100%;
-height: 500px;
-text-align: center;
-background-color: rgb(20, 1, 20 );
-flex-direction: column;
-justify-content: center;
+#introduçao {
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  background-color: rgb(20, 1, 20);
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
 }
 
-#textintroduçao{
+#textintroduçao {
   flex-wrap: wrap;
   width: 100PX;
-  padding: 50PX;
   text-align: center;
-
+  margin-top: 50px;
+  padding: 40px;
+  margin: auto;
 }
 
-#textintroduçao h1{
+#textintroduçao h1 {
   text-align: center;
   width: fit-content;
   margin: auto;
@@ -97,35 +99,35 @@ justify-content: center;
   color: rgb(237, 167, 16);
 }
 
-#smalltext{
+#smalltext {
   font-size: 25px;
   color: rgb(234, 142, 234);
   text-align: center;
-  margin:auto;
+  margin: auto;
   margin-top: 20px;
   font-family: 'Baloo 2', cursive;
   font-weight: bold;
 }
 
-#g{
+#g {
   margin: 0px;
   font-size: 50px;
   text-align: center;
 }
 
-#introduçao p{
+#introduçao p {
   text-align: center;
 }
 
-#introduçao div{
-  width:fit-content;
+#introduçao div {
+  width: fit-content;
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-#pósintrodução{
+#pósintrodução {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -133,19 +135,19 @@ justify-content: center;
 
 }
 
-#textbox{
+#textbox {
   text-align: center;
   margin-left: 60px;
 }
 
-#box{
+#box {
   height: 500px;
   width: 500px;
   margin-right: 15px;
   flex-direction: column;
 }
 
-.content{
+.content {
   margin: 15px;
   padding: 15px;
   height: max-content;
@@ -155,26 +157,26 @@ justify-content: center;
   text-align: center;
 }
 
-.text-contentbox{
+.text-contentbox {
   font-family: 'Baloo 2', cursive;
 
 }
 
-.button-content{
+.button-content {
   margin-top: 15px;
 }
 
-.button-content button{
+.button-content button {
   height: 40px;
   width: 100%;
   font-family: 'Righteous', cursive;
   box-shadow: 3px 2px 3px white;
   background-color: rgb(244, 241, 235);
   border-radius: 5px;
-  
+
 }
 
-.text h2{
+.text h2 {
   margin-top: auto;
   font-family: 'Baloo 2', cursive;
   font-weight: bold;
