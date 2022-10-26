@@ -9,6 +9,7 @@ body {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 html {
@@ -28,11 +29,14 @@ html {
   background-color: rgb(19, 1, 19);
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 #area-logo{
   height: fit-content;
   width: fit-content;
+  margin: auto;
+  margin-left: 10px;
 }
 
 #area-mapadosite{
@@ -46,13 +50,13 @@ html {
 }
 
 #logoimg img {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   width: fit-content;
 }
 
 #nomelogo {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Righteous', cursive;
   margin: auto;
   margin-left: 10px;
@@ -71,6 +75,8 @@ html {
   font-family: 'Righteous', cursive;
   margin: auto;
   padding: auto;
+  text-align: center;
+  margin-top: 5px;
 
 }
 
@@ -107,37 +113,41 @@ main {
 
 #introduçao {
   width: 100%;
-  height: fit-content;
+  height: 500px;
   padding: 0px;
   text-align: center;
   background-color: rgb(19, 1, 19);
   flex-direction: column;
+  display: flex;
   justify-content: center;
   margin-top: 80px;
-  border-radius: 15px;
+  background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 #textintroduçao {
   flex-wrap: wrap;
-  width: 100PX;
   text-align: center;
-  margin-top: 50px;
   padding: 40px;
   margin: auto;
   padding: 20px;
+  width: fit-content;
+  max-width: 700px;
 }
 
 #textintroduçao h1 {
   text-align: center;
   width: fit-content;
   margin: auto;
-  font-size: 50px;
+  font-size: 55px;
   font-family: 'Righteous', cursive;
   color: rgb(237, 167, 16);
 }
 
 #smalltext {
-  font-size: 25px;
+  font-size: 15px;
   color: rgb(234, 142, 234);
   text-align: center;
   margin: auto;
@@ -150,13 +160,6 @@ main {
   text-align: center;
 }
 
-#introduçao div {
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #pósintrodução {
   height: fit-content;
   width: 100%;
@@ -167,6 +170,7 @@ main {
 
 .content {
   background-color: rgb(19, 1, 19);
+  font-size: 14px;
 }
 
 #textbox {
@@ -176,7 +180,7 @@ main {
 
 #textbox p {
   font-family: 'Baloo 2', cursive;
-  font-size: 20px;
+  font-size: 14px;
   width: 500px;
   height: fit-content;
   text-align: center;
@@ -184,7 +188,7 @@ main {
 
 #box {
   height: fit-content;
-  width: 500px;
+  width: 400px;
   margin-right: 15px;
   flex-direction: column;
   margin: auto;
@@ -262,7 +266,7 @@ footer {
   border: rgb(237, 167, 16) solid 5px;
   border-radius: 20px;
   width: 500px;
-  height: 200px;
+  height: fit-content;
   display: flex;
   justify-content: center;
   margin-right: 20px;
@@ -274,14 +278,14 @@ footer {
   margin: auto;
 }
 
-#footer-mapa h3 {
+#footer-mapa h5 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
 
 }
 
 #footer-mapa p {
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'Baloo 2', cursive;
   margin: auto;
   color: rgb(237, 167, 16);
@@ -293,14 +297,14 @@ footer {
   width: fit-content;
 }
 
-#footer-contato h3 {
+#footer-contato h5 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
 }
 
 #footer-contato img{
   border-radius: 5px;
-  height: 50px;
+  height: 40px;
   width: fit-content;
 }
 
