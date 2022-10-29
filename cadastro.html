@@ -5,48 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="cadastrocss/estilo.css">
     <link rel="shortcut icon" href="imagens/fav.png" type="image/x-icon">
     <title>CADASTRO</title>
 </head>
 
 <body>
-    <header>
-        <nav id="menu">
-            <div id="logo">
-                <div id="logoimg"><img src="imagens/fav.png"></div>
-                <h1 id="nomelogo">FRONTENDERS</h1>
-            </div>
 
-            <ul id="lista">
-                <div class="areas">
-                    <a href="#">
-                        <li>SERVIÇOS</li>
-                    </a>
-                </div>
-                <div class="areas">
-                    <a href="#">
-                        <li>CADASTRO</li>
-                    </a>
-                </div>
-                <div class="areas">
-                    <a href="#">
-                        <li>CONTATO</li>
-                    </a>
-                </div>
-                <div class="areas">
-                    <a href="#">
-                        <li>LOGIN</li>
-                    </a>
-                </div>
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <h1>Cadastro na Lista de Espera</h1>
-    <p>
+    <h1 id="h1-form">Cadastro na Lista de Espera</h1>
+    <p id="p-form">
     Gostou dos planos FrontEnders, mas quer algo mais personalizado? Então preencha o formulário abaixo!
     </p>
 
@@ -71,13 +39,13 @@
         </div>
         <div class="elementform">
             <label for="">RG:</label> <br>
-            <input type="text" id="rg-mask" maxlength="12" placeholder="000000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-            <small>Apenas números (Ex.: 000000000)</small>
+            <input type="text" id="rg-mask" maxlength="12" placeholder="000000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <small>Apenas números</small>
         </div>
         <div class="elementform">
             <label for="">CEP:</label><br>
-            <input type="text" id="cep" maxlength="8" placeholder="00000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-            <small>Apenas números (Ex.: 00000000)</small>
+            <input type="text" id="cep" maxlength="8" placeholder="00000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <small>Apenas números</small>
         </div>
         <div class="elementform">
             <label for="">Estado:</label><br>
@@ -93,7 +61,7 @@
         </div>
         <div class="elementform">
             <label for="">Rua:</label><br>
-            <input type="text" placeholder="Logradouro" id="logradouro">
+            <input type="text" placeholder="Logradouro" id="logradouro"> <br>
             <small>Rua, Travessa, Estrada, Avenida..</small>
         </div>
         <div class="elementform">
@@ -106,7 +74,7 @@
         </div>
         <div class="elementform">
             <label for="">Mensagem:</label> <br>
-            <textarea name="" id="msg" cols="40" rows="3" placeholder="Nos conte o que você tem em mente..."
+            <textarea name="" id="msg" cols="70" rows="5" placeholder="Nos conte o que você tem em mente..."
                 required="required"></textarea>
         </div>
 
