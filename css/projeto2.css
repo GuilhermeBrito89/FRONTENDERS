@@ -9,6 +9,7 @@ body {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
+  width: fit-content;
   
 }
 
@@ -229,6 +230,9 @@ main {
   font-weight: bold;
 }
 
+/*///////////////////////CARROSSEL/////////////////////////*/
+
+
 /*/////////////////////////FOOTER/////////////////////////////*/
 
 footer {
@@ -248,6 +252,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  justify-content: flex-start;
 }
 
 #logo-footer h1 {
@@ -268,8 +273,7 @@ footer {
   width: 500px;
   height: fit-content;
   display: flex;
-  justify-content: center;
-  margin-right: 20px;
+  justify-content: flex-end;
   padding: 10px;
   margin: auto;
 }
@@ -307,15 +311,6 @@ footer {
   height: 40px;
   width: fit-content;
 }
-
-
-
-
-
-
-
-
-
 
 
 
