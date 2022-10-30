@@ -14,15 +14,18 @@ enviar.addEventListener('click', function (e) {
         const senha = document.getElementById('senha');
         const confirmsenha = document.getElementById('confirmSenha');
         let regexSenha = /[A-Za-z0-9.]/
-        
+
 
 
         if (senha.value != confirmsenha.value
             && regexSenha != "") {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
+        } else if (cep != Response) {
+            alert('Ops.. Verifique se seu CEP foi digitado corretamente')
+            e.preventDefault()
         }
-        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == ""|| !mail.checkValidity()) {
+        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || !mail.checkValidity() || cep.length < 8) {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
             //
@@ -72,17 +75,16 @@ cep.addEventListener('blur', (e) => {
 
 
 //|| mail.value == "" || mail.value != regexEmail
-function validaEmail(){
-    mail.addEventListener('blur', function () {
-        if (!mail.checkValidity()) {
-            error.innerText = "Email inválido"
-        }
-    })
-    mail.addEventListener('focus', function () {
-        if (error.innerHTML == "Email inválido") {
-            error.innerHTML = "";
-        }
 
-    })
+mail.addEventListener('blur', function () {
+    if (!mail.checkValidity()) {
+        error.innerText = "Email inválido"
+    }
+})
+mail.addEventListener('focus', function () {
+    if (error.innerHTML == "Email inválido") {
+        error.innerHTML = "";
+    }
 
-}
+})
+
