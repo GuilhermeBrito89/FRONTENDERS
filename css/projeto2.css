@@ -6,10 +6,12 @@
 body {
   background-color: rgb(35, 2, 35);
   color: aliceblue;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   
 }
 
@@ -24,30 +26,23 @@ html {
   width: 100%;
   border-bottom: solid 3px white;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: rgb(19, 1, 19);
   display: flex;
-  justify-content: space-between;
   font-size: 14px;
 }
 
 #area-logo{
-  height: fit-content;
-  width: fit-content;
   margin: auto;
   margin-left: 10px;
-}
-
-#area-mapadosite{
-  width: fit-content;
-  height: fit-content;
 }
 
 #logo {
   display: flex;
   margin: auto;
+}
+
+#logo h1{
+  font-weight: bold;
 }
 
 #logoimg img {
@@ -66,43 +61,30 @@ html {
 #lista {
   list-style: none;
   height: 65px;
-  width: 500px;
+  width: 450px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  float: right;
-  position: relative;
-  right: 20px;
   font-family: 'Righteous', cursive;
   margin: auto;
   padding: auto;
   text-align: center;
-  margin-top: 5px;
 
 }
 
 #lista li {
   color: aliceblue;
-  height: fit-content;
-  width: fit-content;
   padding: 10px;
 }
 
 .areas {
-  position: relative;
-  top: 10px;
-  width: fit-content;
   height: fit-content;
-  position: relative;
-  top: 10px;
-  justify-content: center;
+  margin: auto;
 }
 
 .areas:hover {
   background-color: rgb(35, 2, 35);
   border: solid rgb(237, 167, 16) 3px;
   border-radius: 15px;
-
 }
 
 /*/////////////////////MENU////////////////////////////////////*/
@@ -115,12 +97,10 @@ main {
 #introduçao {
   width: 100%;
   height: 500px;
-  padding: 0px;
   text-align: center;
   background-color: rgb(19, 1, 19);
-  flex-direction: column;
   display: flex;
-  justify-content: center;
+  margin: auto;
   margin-top: 80px;
   background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
   background-repeat: no-repeat;
@@ -130,35 +110,26 @@ main {
 
 #textintroduçao {
   flex-wrap: wrap;
-  text-align: center;
   padding: 40px;
   margin: auto;
-  padding: 20px;
   width: fit-content;
-  max-width: 700px;
 }
 
 #textintroduçao h1 {
-  text-align: center;
-  width: fit-content;
   margin: auto;
   font-size: 55px;
   font-family: 'Righteous', cursive;
   color: rgb(237, 167, 16);
+  font-weight: bold;
 }
 
 #smalltext {
   font-size: 15px;
   color: rgb(234, 142, 234);
-  text-align: center;
   margin: auto;
   margin-top: 20px;
   font-family: 'Baloo 2', cursive;
   font-weight: bold;
-}
-
-#introduçao p {
-  text-align: center;
 }
 
 #pósintrodução {
