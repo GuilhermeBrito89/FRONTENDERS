@@ -7,38 +7,31 @@ body {
   background-color: rgb(35, 2, 35);
   color: aliceblue;
   height: 100%;
-  display: flex;
   flex-wrap: wrap;
   width: 100%;
-  display: flex;
   justify-content: center;
   
 }
 
-html {
-  height: fit-content;
-}
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
 
-/*/////////////////////MENU////////////////////////////////////*/
-
-#menu {
+.menu {
   height: 70px;
   width: 100%;
   border-bottom: solid 3px white;
   position: fixed;
+  top: 0px;
   background-color: rgb(19, 1, 19);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
-}
-
-#area-logo{
-  margin: auto;
-  margin-left: 10px;
 }
 
 #logo {
   display: flex;
   margin: auto;
+  margin-left: 10px;
 }
 
 #logo h1{
@@ -58,9 +51,28 @@ html {
   margin-left: 10px;
 }
 
+.toggle-button{
+  position: absolute;
+  top: 1.30rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: rgb(237, 167, 16) ;
+  border-radius: 10px;
+}
+
+
 #lista {
   list-style: none;
-  height: 65px;
+  height: fit-content;
   width: 450px;
   display: flex;
   justify-content: space-between;
@@ -76,18 +88,59 @@ html {
   padding: 10px;
 }
 
-.areas {
-  height: fit-content;
-  margin: auto;
+#lista a{
+  text-decoration: none;
+  color: aliceblue;
 }
 
-.areas:hover {
+ #lista li:hover {
   background-color: rgb(35, 2, 35);
   border: solid rgb(237, 167, 16) 3px;
   border-radius: 15px;
 }
 
-/*/////////////////////MENU////////////////////////////////////*/
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+/*///////////////////MENU-MOBILE///////////////////////////////(guilherme)*/
+@media (max-width: 758px) {
+
+  .toggle-button{
+    display: flex;
+  }
+
+  .area-mapadosite{
+    display: none;
+    width: 100%;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .area-mapadosite ul{
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
+  .menu{
+    flex-direction: column;
+    position:static;
+    height: fit-content;
+  }
+
+  #logo{
+    margin-top: 17px;
+  }
+
+  .area-mapadosite.active{
+    display: flex;
+
+  }
+  
+}
+
+/*///////////////////MENU-MOBILE///////////////////////////////(guilherme)*/
+
+/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
 
 main {
   height: 100%;
@@ -101,7 +154,7 @@ main {
   background-color: rgb(19, 1, 19);
   display: flex;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,10 +254,12 @@ main {
   font-weight: bold;
 }
 
+/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
+
 /*///////////////////////CARROSSEL/////////////////////////*/
 
 
-/*/////////////////////////FOOTER/////////////////////////////*/
+/*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 
 footer {
   background-color: rgb(20, 1, 20);
@@ -283,6 +338,5 @@ footer {
   width: fit-content;
 }
 
-
-
+/*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 /* guilherme - fim*/
