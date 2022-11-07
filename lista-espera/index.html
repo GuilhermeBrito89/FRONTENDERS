@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="cadastrocss/css.css">
     <link rel="shortcut icon" href="imagens/fav.png" type="image/x-icon">
     <title>CADASTRO</title>
@@ -15,7 +15,7 @@
 
     <h1 id="h1-form">Cadastro na Lista de Espera</h1>
     <p id="p-form">
-    Gostou dos planos FrontEnders, mas quer algo mais personalizado? Então preencha o formulário abaixo!
+        Gostou dos planos FrontEnders, mas quer algo mais personalizado? Então preencha o formulário abaixo!
     </p>
 
     <form id="form" required="required">
@@ -39,12 +39,14 @@
         </div>
         <div class="elementform">
             <label for="">RG:</label> <br>
-            <input type="text" id="rg-mask" maxlength="12" placeholder="000000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <input type="text" id="rg-mask" maxlength="12" placeholder="000000000"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"> <br>
             <small>Apenas números</small>
         </div>
         <div class="elementform">
             <label for="">CEP:</label><br>
-            <input type="text" id="cep" minlength="8" maxlength="8" placeholder="00000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <input type="text" id="cep" minlength="8" maxlength="8" placeholder="00000000" required="required"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"> <br>
             <small>Apenas números</small>
         </div>
         <div class="elementform">
