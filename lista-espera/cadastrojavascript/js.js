@@ -14,15 +14,15 @@ enviar.addEventListener('click', function (e) {
         const senha = document.getElementById('senha');
         const confirmsenha = document.getElementById('confirmSenha');
         let regexSenha = /[A-Za-z0-9.]/
-        
+
 
 
         if (senha.value != confirmsenha.value
             && regexSenha != "") {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
-        }
-        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == ""|| !mail.checkValidity()) {
+        } 
+        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || !mail.checkValidity() || cep.length < 8 || cep.value == "00000000") {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
             //
