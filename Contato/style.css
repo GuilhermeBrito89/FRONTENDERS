@@ -8,18 +8,19 @@ color: aliceblue;
 }
 #cont{
     font-family:'Righteous', cursive;
+    font-size: 70px;
 }
 .name{
     font-family: 'Baloo 2', cursive;
     margin-left: 15px;
-    
+    text-align: center;
     
 }
 img{
     width: 180px;
     border-radius: 20%;
-    margin-left: 15px;
     margin-top: 20px;
+    justify-content: center;
 
 }
 .github{
@@ -31,4 +32,8 @@ img{
     width: 50px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+.ajuste{
+    display: inline-block;
+    margin-left: 40px;
 }
