@@ -21,7 +21,7 @@ enviar.addEventListener('click', function (e) {
             && regexSenha != "") {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
-        }
+        } 
         else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || !mail.checkValidity() || cep.length < 8 || cep.value == "00000000") {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
@@ -72,16 +72,17 @@ cep.addEventListener('blur', (e) => {
 
 
 //|| mail.value == "" || mail.value != regexEmail
+function validaEmail(){
+    mail.addEventListener('blur', function () {
+        if (!mail.checkValidity()) {
+            error.innerText = "Email inválido"
+        }
+    })
+    mail.addEventListener('focus', function () {
+        if (error.innerHTML == "Email inválido") {
+            error.innerHTML = "";
+        }
 
-mail.addEventListener('blur', function () {
-    if (!mail.checkValidity()) {
-        error.innerText = "Email inválido"
-    }
-})
-mail.addEventListener('focus', function () {
-    if (error.innerHTML == "Email inválido") {
-        error.innerHTML = "";
-    }
+    })
 
-})
-
+}
