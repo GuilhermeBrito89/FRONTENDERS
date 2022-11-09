@@ -1,24 +1,98 @@
-/* guilherme - inicio*/
-
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
+
 body {
-  background-color: rgb(35, 2, 35);
-  color: aliceblue;
-  height: 100%;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-
-}
-
-html {
-  height: fit-content;
+    background-color: rgb(35, 2, 35);
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content:center ;
 }
 
 
+#p-form {
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    width: 70vw;
+    text-align: center;
+    margin: auto;
+}
 
+
+
+#h1-form {
+    margin-top: 10%;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color:rgb(237, 167, 16);;
+}
+
+#form {
+    background-color: rgba(152, 139, 167, 0.877);
+    width: fit-content;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 4px 2px rgb(176, 187, 250);
+    margin: auto;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+
+input {
+    box-shadow: 2px 2px rgb(176, 187, 250);
+    height: 30px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+textarea {
+    box-shadow: 2px 2px rgb(176, 187, 250);
+    border-radius: 5px;
+}
+
+input:invalid {
+    border-color: red;
+    box-shadow: 2px 2px red;
+}
+
+label {
+    font-family: 'Righteous', cursive;
+    font-size: bold;
+
+}
+
+span {
+    color: red;
+}
+
+.elementform {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(max-width:950px) {
+    #msg {
+        width: 80%;
+    }
+
+    #h1-form {
+        margin-top: 50vw;
+    }
+
+
+}
 
 /*/////////////////////MENU////////////////////////////////////(guilherme)*/
 
@@ -129,143 +203,6 @@ header {
 }
 
 /*/////////////////////MENU////////////////////////////////////(guilherme)*/
-
-
-
-
-
-/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
-
-main {
-  height: 100%;
-  width: 100%;
-}
-
-#introduçao {
-  width: 100%;
-  height: 500px;
-  text-align: center;
-  background-color: rgb(19, 1, 19);
-  display: flex;
-  margin: auto;
-  margin-top: 60px;
-  background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-#textintroduçao {
-  flex-wrap: wrap;
-  padding: 40px;
-  margin: auto;
-  width: fit-content;
-}
-
-#textintroduçao h1 {
-  margin: auto;
-  font-size: 3em;
-  font-family: 'Righteous', cursive;
-  color: rgb(237, 167, 16);
-  font-weight: bold;
-}
-
-#smalltext {
-  font-size: 15px;
-  color: rgb(234, 142, 234);
-  margin: auto;
-  margin-top: 20px;
-  font-family: 'Baloo 2', cursive;
-  font-weight: bold;
-}
-
-#pósintrodução {
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.content {
-  background-color: rgb(19, 1, 19);
-  font-size: 14px;
-  width: 90%;
-}
-
-#textbox {
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  height: 90%;
-
-}
-
-#textbox p {
-  font-family: 'Baloo 2', cursive;
-  font-size: 14px;
-  text-align: center;
-}
-
-#box {
-  height: fit-content;
-  width: 400px;
-  margin-right: 15px;
-  flex-direction: column;
-  margin: auto;
-}
-
-.content {
-  margin: 15px;
-  padding: 15px;
-  border: white 1px solid;
-  border-radius: 10px;
-  justify-content: center;
-  text-align: center;
-}
-
-.text-contentbox {
-  font-family: 'Baloo 2', cursive;
-  color: rgb(237, 167, 16);
-
-}
-
-.button-content {
-  margin-top: 15px;
-}
-
-.button-content button {
-  height: 40px;
-  width: 90%;
-  font-family: 'Righteous', cursive;
-  box-shadow: 3px 2px 3px white;
-  background-color: rgb(244, 241, 235);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button-content button:hover{
-  box-shadow: 3px 2px 3px rgb(237, 167, 16);
-  color:rgb(234, 142, 234);
-}
-
-.text h2 {
-  margin-top: auto;
-  font-family: 'Righteous', cursive;
-  font-weight: bold;
-}
-
-/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
-
-
-
-
-/*///////////////////////CARROSSEL/////////////////////////*/
-
-
-
-
-
 /*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 
 

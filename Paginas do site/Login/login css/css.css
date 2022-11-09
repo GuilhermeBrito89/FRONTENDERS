@@ -1,24 +1,12 @@
-/* guilherme - inicio*/
-
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-body {
-  background-color: rgb(35, 2, 35);
-  color: aliceblue;
-  height: 100%;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
 
+body{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
 }
-
-html {
-  height: fit-content;
-}
-
-
-
 
 /*/////////////////////MENU////////////////////////////////////(guilherme)*/
 
@@ -133,138 +121,293 @@ header {
 
 
 
-
-/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
-
-main {
-  height: 100%;
+header {
   width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(19, 1, 19);
+  position: fixed;
+  border-bottom: solid 3px white;
+  top: 0px;
 }
 
-#introduçao {
-  width: 100%;
-  height: 500px;
-  text-align: center;
-  background-color: rgb(19, 1, 19);
+.menu {
+  width: 90%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#logo {
   display: flex;
   margin: auto;
-  margin-top: 60px;
-  background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  margin-left: 10px;
 }
 
-#textintroduçao {
-  flex-wrap: wrap;
-  padding: 40px;
-  margin: auto;
+#logo h1 {
+  font-weight: bold;
+}
+
+#logoimg img {
+  width: 40px;
+  height: 40px;
   width: fit-content;
 }
 
-#textintroduçao h1 {
-  margin: auto;
-  font-size: 3em;
+#nomelogo {
+  font-size: 30px;
   font-family: 'Righteous', cursive;
-  color: rgb(237, 167, 16);
-  font-weight: bold;
-}
-
-#smalltext {
-  font-size: 15px;
-  color: rgb(234, 142, 234);
   margin: auto;
-  margin-top: 20px;
-  font-family: 'Baloo 2', cursive;
-  font-weight: bold;
+  margin-left: 10px;
 }
 
-#pósintrodução {
-  height: fit-content;
+.toggle-button {
+  position: absolute;
+  top: 1.30rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.toggle-button .bar {
+  height: 3px;
   width: 100%;
+  background-color: rgb(237, 167, 16);
+  border-radius: 10px;
+}
+
+.area-mapadosite {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#lista {
+  list-style: none;
+  height: fit-content;
+  width: 450px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.content {
-  background-color: rgb(19, 1, 19);
-  font-size: 14px;
-  width: 90%;
-}
-
-#textbox {
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  height: 90%;
-
-}
-
-#textbox p {
-  font-family: 'Baloo 2', cursive;
-  font-size: 14px;
-  text-align: center;
-}
-
-#box {
-  height: fit-content;
-  width: 400px;
-  margin-right: 15px;
-  flex-direction: column;
-  margin: auto;
-}
-
-.content {
-  margin: 15px;
-  padding: 15px;
-  border: white 1px solid;
-  border-radius: 10px;
-  justify-content: center;
-  text-align: center;
-}
-
-.text-contentbox {
-  font-family: 'Baloo 2', cursive;
-  color: rgb(237, 167, 16);
-
-}
-
-.button-content {
-  margin-top: 15px;
-}
-
-.button-content button {
-  height: 40px;
-  width: 90%;
   font-family: 'Righteous', cursive;
-  box-shadow: 3px 2px 3px white;
-  background-color: rgb(244, 241, 235);
-  border-radius: 5px;
-  cursor: pointer;
+  margin: auto;
+  padding: 0PX;
+  text-align: center;
+
 }
 
-.button-content button:hover{
-  box-shadow: 3px 2px 3px rgb(237, 167, 16);
-  color:rgb(234, 142, 234);
+#lista li {
+  color: aliceblue;
+  padding: 10px;
+  text-align: center;
 }
 
-.text h2 {
-  margin-top: auto;
-  font-family: 'Righteous', cursive;
-  font-weight: bold;
+#lista a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
-/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
+#lista li:hover {
+  background-color: rgb(35, 2, 35);
+  border: solid rgb(237, 167, 16) 3px;
+  border-radius: 15px;
+}
+
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+.login{
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(26,1,26),rgb(26, 1, 26),rgb(26, 1, 26));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_container{
+    min-height:  400px;
+    width: 300px;
+    background-color: rgba(152, 139, 167, 0.877);
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_title{
+    margin-bottom: 32px;
+    color: white
+}
+
+.login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login_input{
+    height: 48px;
+    width: 100%; 
+    padding-left: 8px;
+    border:unset;
+    outline: none;
+    border-radius: 10px;
+}
+
+.login_input-border{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: rgb(29, 27, 28);
+    transition: .3s ease-in-out;
+    
+
+}
+
+.login_input-border::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(45deg,rgb(5, 2, 5),rgb(61, 4, 61),rgb(58, 14, 58));
+    transition: .3s ease-in-out;
+    
+    
+}
+
+.login_submit{
+    background-color: rgb(59, 26, 59);
+    border: none;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer; 
+
+}
+
+.login_submit:hover{
+    color:gray;
+}
+
+
+.login_reset{
+    font-size: 12px;
+    padding: 12px;
+    color: beige;
+    text-decoration: none;
+}
 
 
 
 
-/*///////////////////////CARROSSEL/////////////////////////*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.login{
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(26,1,26),rgb(26, 1, 26),rgb(26, 1, 26));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_container{
+    min-height:  400px;
+    width: 300px;
+    background-color: rgba(152, 139, 167, 0.877);
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_title{
+    margin-bottom: 32px;
+    color: white
+}
+
+.login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login_input{
+    height: 48px;
+    width: 100%; 
+    padding-left: 8px;
+    border:unset;
+    outline: none;
+    border-radius: 10px;
+}
+
+.login_input-border{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: rgb(29, 27, 28);
+    transition: .3s ease-in-out;
+    
+
+}
+
+.login_input-border::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(45deg,rgb(5, 2, 5),rgb(61, 4, 61),rgb(58, 14, 58));
+    transition: .3s ease-in-out;
+    
+    
+}
+
+.login_submit{
+    background-color: rgb(59, 26, 59);
+    border: none;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer; 
+
+}
+
+.login_submit:hover{
+    color:gray;
+}
 
 
-
-
+.login_reset{
+    font-size: 12px;
+    padding: 12px;
+    color: beige;
+    text-decoration: none;
+}
 
 /*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 
