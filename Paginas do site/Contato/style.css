@@ -4,42 +4,73 @@
 body {
   background-color: rgb(35, 2, 35);
   color: aliceblue;
-  height: 100%;
-  flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
 
 }
 
-html {
-  height: fit-content;
+.espaço{
+  height: 150px;
+}
+
+.main-mariana{
+  height: 100%;
+}
+
+.cardsbox-mariana{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.card-mariana{
+  height: 350PX;
+  width: 230PX;
+  background-color: #140114;
+  text-align: center;
+  border:  #EDA710 solid 1px;
+  border-radius: 15px;
+}
+
+.card-mariana:hover{
+  border: #EDA710 5px solid;
+
 }
 
 #cont{
     font-family:'Righteous', cursive;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+
 }
 .name{
-    font-family: 'Baloo 2', cursive;
-    margin-left: 15px;
-    
-    
+    font-family: 'Righteous' , cursive;
+    color: #EDA710;
 }
-img{
-    width: 180px;
+.foto{
+    width: 200px;
+    height: 200px;
     border-radius: 20%;
-    margin-left: 15px;
     margin-top: 20px;
+    border: aliceblue 2px solid;
 
 }
 .github{
     width: 50px;
     margin-bottom: 10px;
     margin-top: 20px;
+    border-radius: 25px;
+    border: #EDA710 2px solid;
 }
 .link{
     width: 50px;
     margin-bottom: 10px;
     margin-top: 20px;
+    border-radius: 25px;
+    border: #EDA710 2px solid;
 }
 
 
