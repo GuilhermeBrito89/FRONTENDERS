@@ -10,10 +10,6 @@ body{
     justify-content: center;
 }
 
-html {
-  height: fit-content;
-}
-
 /*/////////////////////MENU////////////////////////////////////(guilherme)*/
 
 
@@ -124,13 +120,18 @@ header {
 
 /*/////////////////////MENU////////////////////////////////////(guilherme)*/
 
+.espaço{
+  height:130px
+}
+
 #sobre{
     font-family:'Righteous', cursive;
-    margin-left: 30px;
-
+    color: #EDA710;   
 }
 .servico{
     display: flex;
+    justify-content: center;
+    margin: auto
 }
 .texto{
     margin-left: 20px;
@@ -139,10 +140,20 @@ header {
     font-size: 20px;
     text-align: justify;
     margin-right: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
     
 }
+
+.ferramentas-img{
+width: 50%;
+height: 50%;
+}
+
 .servico img{
-    width: 150px;
+    width: 200px;
+    height: 200px;
     flex-direction: column;
 }
 
@@ -150,22 +161,19 @@ header {
     display:flex;
     justify-content: center
 }
-body {
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
 /* alinhamento e espaço entre os cards. */
 
-main.cards {
+div.cards {
     display: flex;
-    padding: 32px;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 /* caracteristicas do fundo do card. */
-main.cards section.card {
+div.cards section.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,30 +183,31 @@ main.cards section.card {
     border-radius: 8px;
     max-height: 468px;
     margin-left: 32px;
-    
+    width: 250px;
+    height: 250px;    
 }
 /* tirando a margem da esquerda */
-main.cards section.card:first-child {
+div.cards section.card:first-child {
     margin-left: 0;
 }
 /* determinando o tamanho da imagem icone */
-main.cards section.card .icon {
+div.cards section.card .icon {
     width: 64px;
     height: 64px;
 }
 /* esta dizendo o espaço que vai ocupar na no icon. */
-main.cards section.card img { 
+div.cards section.card img { 
     width: 100%;
 }
 /* fonte */
-main.cards section.card h2 {
+div.cards section.card h2 {
     font-size: 100%;
     margin: 16px 0;
     font-family: 'Baloo 2', cursive;
     font: 20px;
 }
 
-main.cards section.card span {
+div.cards section.card span {
     font-weight: 300;
     max-width: 240px;
     font-size: 80%;
@@ -207,7 +216,7 @@ main.cards section.card span {
     font-size: 16px;
 }
 /* cor e alinhamento do botão */
-main.cards section.card button {
+div.cards section.card button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -221,30 +230,30 @@ main.cards section.card button {
     font-size:21px ;
 }
 /* cor do botão */
-main.cards section.card.html button {
+div.cards section.card.html button {
     background: linear-gradient(to right, #d713de, #fff );
 }
-main.cards section.card.css button {
+div.cards section.card.css button {
     background: linear-gradient(to right, #d713de, #fff);
 }
-main.cards section.card.js button {
+div.cards section.card.js button {
     background: linear-gradient(to right, #d713de, #fff);
 }
-main.cards section.card.persona button {
+div.cards section.card.persona button {
     background: linear-gradient(to right, #d713de, #fff);
 }
 
 /* luz de fundo do card */
-main.cards section.card.html {
+div.cards section.card.html {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-main.cards section.card.css {
+div.cards section.card.css {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-main.cards section.card.js {
+div.cards section.card.js {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-main.cards section.card.persona {
+div.cards section.card.persona {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
 /* curvatura do icon  */
@@ -267,6 +276,11 @@ main.cards section.card.persona {
     text-decoration: none;
 }
 
+@media (max-width:758px){
+.servico{
+  flex-wrap: wrap;
+}
+}
 /*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 
 
