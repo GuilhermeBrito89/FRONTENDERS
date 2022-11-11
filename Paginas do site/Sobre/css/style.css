@@ -173,41 +173,37 @@ div.cards {
     
 }
 /* caracteristicas do fundo do card. */
-div.cards section.card {
+div.cards section.card-m {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: rgb(71, 42, 105);
-    padding: 1rem 1.5rem;
+    margin: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
-    margin-left: 32px;
     width: 250px;
     height: 250px;    
 }
-/* tirando a margem da esquerda */
-div.cards section.card:first-child {
-    margin-left: 0;
-}
+
 /* determinando o tamanho da imagem icone */
-div.cards section.card .icon {
+div.cards section.card-m .icon {
     width: 64px;
     height: 64px;
 }
 /* esta dizendo o espaço que vai ocupar na no icon. */
-div.cards section.card img { 
+div.cards section.card-m img { 
     width: 100%;
 }
 /* fonte */
-div.cards section.card h2 {
+div.cards section.card-m h2 {
     font-size: 100%;
     margin: 16px 0;
     font-family: 'Baloo 2', cursive;
     font: 20px;
 }
 
-div.cards section.card span {
+div.cards section.card-m span {
     font-weight: 300;
     max-width: 240px;
     font-size: 80%;
@@ -216,7 +212,7 @@ div.cards section.card span {
     font-size: 16px;
 }
 /* cor e alinhamento do botão */
-div.cards section.card button {
+div.cards section.card-m button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -230,30 +226,30 @@ div.cards section.card button {
     font-size:21px ;
 }
 /* cor do botão */
-div.cards section.card.html button {
+div.cards section.card-m button {
     background: linear-gradient(to right, #d713de, #fff );
 }
-div.cards section.card.css button {
+div.cards section.card-m button {
     background: linear-gradient(to right, #d713de, #fff);
 }
-div.cards section.card.js button {
+div.cards section.card-m button {
     background: linear-gradient(to right, #d713de, #fff);
 }
-div.cards section.card.persona button {
+div.cards section.card-m button {
     background: linear-gradient(to right, #d713de, #fff);
 }
 
 /* luz de fundo do card */
-div.cards section.card.html {
+div.cards section.card-m {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-div.cards section.card.css {
+div.cards section.card-m {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-div.cards section.card.js {
+div.cards section.card-m {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
-div.cards section.card.persona {
+div.cards section.card-m {
     box-shadow: 20px 20px 50px -30px #8f3da6;
 }
 /* curvatura do icon  */
@@ -261,25 +257,29 @@ div.cards section.card.persona {
     border-radius: 5px;
 }
 
-.card .button-hover {
+.card-m .button-hover {
     display: none;
     text-decoration: none;
 }
 
-.card:hover .button-hover {
-    display: block;
+.card-m:hover .button-hover {
+  display: block;
     text-decoration: none;
 }
 
-.card:hover .button-principal {
+.card-m:hover .button-principal {
     display: none;
     text-decoration: none;
 }
 
 @media (max-width:758px){
-.servico{
+  .servico{
   flex-wrap: wrap;
 }
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
 }
 /*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
 
