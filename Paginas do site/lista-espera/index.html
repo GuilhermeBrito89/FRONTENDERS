@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bot css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--bot css-->
+    <link rel="stylesheet" href="cadastrocss/css.css">
+    <link rel="shortcut icon" href="imagens/fav.png" type="image/x-icon">
+    <title>FrontEnders</title>
+</head>
+
+<body>
+
+    <!--guilherme-->
+    <header>
+    
+      <nav class="menu">
+    
+        <a href="../../index.html">
+          <div id="logo">
+            <div id="logoimg"><img src="../../img/1665933565708.png"></div>
+            <h1 id="nomelogo">FRONTENDERS</h1>
+          </div>
+          </a>
+    
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+    
+        <div class="area-mapadosite">
+          <ul id="lista">
+            <li><a href="../../Paginas do site/Sobre/servico.html">SERVIÇOS</a></li>
+            <li><a href="../../Paginas do site/lista-espera/index.html">CADASTRO</a></li>
+            <li><a href="../../Paginas do site/Contato/index.html">CONTATO</a></li>
+            <li><a href="../../Paginas do site/Login/index.html">LOGIN</a></li>
+          </ul>
+        </div>
+    
+      </nav>
+    
+    </header>
+    <!--guilherme-->
+    <h1 id="h1-form">Cadastro na Lista de Espera</h1>
+    <p id="p-form">
+    Gostou dos planos FrontEnders, mas quer algo mais personalizado? Então preencha o formulário abaixo!
+    </p>
+
+    <form id="form" required="required">
+        <div class="elementform">
+            <label for="name">Nome:</label> <br>
+            <input type="text" id="nome" placeholder="Nome completo">
+        </div>
+        <div class="elementform">
+            <label for="email">E-mail:</label> <br>
+            <input type="email" placeholder="meuemail@exemplo.com" id="email" onblur="validaEmail()">
+            <span id="erro-email"></span>
+        </div>
+        <div class="elementform">
+            <label for="">Senha:</label> <br>
+            <input type="password" id="senha" placeholder="Senha" minlength="6">
+        </div>
+        <div class="elementform">
+            <label for="">Confirme sua senha:</label> <br>
+            <input type="password" id="confirmSenha" placeholder="Confirme sua senha" minlength="6">
+
+        </div>
+        <div class="elementform">
+            <label for="">RG:</label> <br>
+            <input type="text" id="rg-mask" maxlength="12" placeholder="000000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <small>Apenas números</small>
+        </div>
+        <div class="elementform">
+            <label for="">CEP:</label><br>
+            <input type="text" id="cep" maxlength="8" placeholder="00000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > <br>
+            <small>Apenas números</small>
+        </div>
+        <div class="elementform">
+            <label for="">Estado:</label><br>
+            <input type="text" placeholder="Estado" id="uf">
+        </div>
+        <div class="elementform">
+            <label for="">Cidade:</label> <br>
+            <input type="text" placeholder="Cidade" id="localidade">
+        </div>
+        <div class="elementform">
+            <label for="">Bairro:</label><br>
+            <input type="text" placeholder="Bairro" id="bairro">
+        </div>
+        <div class="elementform">
+            <label for="">Rua:</label><br>
+            <input type="text" placeholder="Logradouro" id="logradouro"> <br>
+            <small>Rua, Travessa, Estrada, Avenida..</small>
+        </div>
+        <div class="elementform">
+            <label for="">Número:</label><br>
+            <input type="number" placeholder="Número">
+        </div>
+        <div class="elementform">
+            <label for="">Complemento:</label><br>
+            <input type="text" placeholder="Complemento" id="complemento">
+        </div>
+        <div class="elementform">
+            <label for="">Mensagem:</label> <br>
+            <textarea name="" id="msg" cols="70" rows="5" placeholder="Nos conte o que você tem em mente..."
+                required="required"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="cadastrojavascript/js.js"></script>
+
+<!--guilherme-->
+<footer>
+
+  <div class="footer-conteudo">
+    <div id="logo-footer">
+      <img src="../../img/1665933565708.png">
+      <h1>FRONTENDERS</h1>
+    </div>
+
+    <div id="container-mapa-contato">
+      <div id="footer-mapa">
+
+        <h5>MAPA DO SITE</h5>
+        <p>Serviços</p>
+        <p>Cadastro</p>
+        <p>Contato</p>
+        <p>Login</p>
+
+      </div>
+
+      <div id="footer-contato">
+
+        <h5>CONTATO</h5>
+
+        <img src="../../img/zap.png" alt="CONTATO">
+
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+<script src="../../js/projeto2.js"></script>
+<!--guilherme-->
+</body>
+
+</html>

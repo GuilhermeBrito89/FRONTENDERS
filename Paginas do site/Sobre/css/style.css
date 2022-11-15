@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+body{
+    background-color: rgb(26,1,26 );
+    color: white; 
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+
+
+
+header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(19, 1, 19);
+  position: fixed;
+  border-bottom: solid 3px white;
+  top: 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu {
+  width: 90%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#logo {
+  display: flex;
+  margin: auto;
+  margin-left: 10px;
+}
+
+#logo h1 {
+  font-weight: bold;
+}
+
+#logoimg img {
+  width: 40px;
+  height: 40px;
+  width: fit-content;
+}
+
+#nomelogo {
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.30rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(237, 167, 16);
+  border-radius: 10px;
+}
+
+.area-mapadosite {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#lista {
+  list-style: none;
+  height: fit-content;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Righteous', cursive;
+  margin: auto;
+  padding: 0PX;
+  text-align: center;
+
+}
+
+#lista li {
+  color: aliceblue;
+  padding: 10px;
+  text-align: center;
+}
+
+#lista a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#lista li:hover {
+  background-color: rgb(35, 2, 35);
+  border: solid rgb(237, 167, 16) 3px;
+  border-radius: 15px;
+}
+
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+.espaço{
+  height:130px
+}
+
+#sobre{
+    font-family:'Righteous', cursive;
+    color: #EDA710;   
+}
+.servico{
+    display: flex;
+    justify-content: center;
+    margin: auto
+}
+.texto{
+    margin-left: 20px;
+    margin-right: 100px;   
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    
+}
+
+.ferramentas-img{
+width: 50%;
+height: 50%;
+}
+
+.servico img{
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+}
+
+.img{
+    display:flex;
+    justify-content: center
+}
+/* alinhamento e espaço entre os cards. */
+
+div.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+/* caracteristicas do fundo do card. */
+div.cards section.card-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(71, 42, 105);
+    margin: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    width: 250px;
+    height: 250px;    
+}
+
+/* determinando o tamanho da imagem icone */
+div.cards section.card-m .icon {
+    width: 64px;
+    height: 64px;
+}
+/* esta dizendo o espaço que vai ocupar na no icon. */
+div.cards section.card-m img { 
+    width: 100%;
+}
+/* fonte */
+div.cards section.card-m h2 {
+    font-size: 100%;
+    margin: 16px 0;
+    font-family: 'Baloo 2', cursive;
+    font: 20px;
+}
+
+div.cards section.card-m span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 16px;
+}
+/* cor e alinhamento do botão */
+div.cards section.card-m button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size:21px ;
+}
+/* cor do botão */
+div.cards section.card-m button {
+    background: linear-gradient(to right, #d713de, #fff );
+}
+div.cards section.card-m button {
+    background: linear-gradient(to right, #d713de, #fff);
+}
+div.cards section.card-m button {
+    background: linear-gradient(to right, #d713de, #fff);
+}
+div.cards section.card-m button {
+    background: linear-gradient(to right, #d713de, #fff);
+}
+
+/* luz de fundo do card */
+div.cards section.card-m {
+    box-shadow: 20px 20px 50px -30px #8f3da6;
+}
+div.cards section.card-m {
+    box-shadow: 20px 20px 50px -30px #8f3da6;
+}
+div.cards section.card-m {
+    box-shadow: 20px 20px 50px -30px #8f3da6;
+}
+div.cards section.card-m {
+    box-shadow: 20px 20px 50px -30px #8f3da6;
+}
+/* curvatura do icon  */
+.cards img {
+    border-radius: 5px;
+}
+
+.card-m .button-hover {
+    display: none;
+    text-decoration: none;
+}
+
+.card-m:hover .button-hover {
+  display: block;
+    text-decoration: none;
+}
+
+.card-m:hover .button-principal {
+    display: none;
+    text-decoration: none;
+}
+
+@media (max-width:758px){
+  .servico{
+  flex-wrap: wrap;
+}
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+}
+/*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
+
+
+
+
+footer {
+    background-color: rgb(20, 1, 20);
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+  
+  }
+  
+  .footer-conteudo{
+    width: 90%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  
+  #logo-footer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  #logo-footer h1 {
+    font-family: 'Righteous', cursive;
+  
+  }
+  
+  #logo-footer img{
+    height: 40px;
+    width: fit-content;
+  }
+  
+  #container-mapa-contato {
+    border: rgb(237, 167, 16) solid 5px;
+    border-radius: 20px;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  #footer-mapa {
+    margin: auto;
+  }
+  
+  #footer-mapa h5 {
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+  
+  }
+  
+  #footer-mapa p {
+    font-size: 14px;
+    font-family: 'Baloo 2', cursive;
+    margin: auto;
+    color: rgb(237, 167, 16);
+  }
+  
+  #footer-contato {
+    margin: 8px auto auto auto;
+    height: fit-content;
+    width: fit-content;
+  }
+  
+  #footer-contato h5 {
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+  }
+  
+  #footer-contato img{
+    border-radius: 5px;
+    height: 40px;
+    width: fit-content;
+  }
+  
+  /*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
+  
+  
+  
+  
+  /*////////////////////////responsividades(guilherme)///////////////////////////*/
+
+@media(max-width: 450px) {
+  #textintroduçao h1 {
+    font-size: 2rem;
+  }
+
+  #logo h1 {
+    font-size: 1.5rem;
+  }
+
+  #logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-footer h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 758px) {
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .area-mapadosite {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .area-mapadosite ul {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: static;
+    height: fit-content;
+    align-items: flex-start;
+  }
+
+  #logo {
+    margin-top: 17px;
+  }
+
+  .area-mapadosite.active {
+    display: flex;
+
+  }
+
+}
+
+/*////////////////////////responsividades(guilherme)///////////////////////////*/
+
+/* guilherme - fim*/

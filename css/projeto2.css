@@ -1,0 +1,424 @@
+/* guilherme - inicio*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+body {
+  background-color: rgb(35, 2, 35);
+  color: aliceblue;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+}
+
+html {
+  height: fit-content;
+}
+
+
+
+
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+
+
+
+header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(19, 1, 19);
+  position: fixed;
+  border-bottom: solid 3px white;
+  top: 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu {
+  width: 90%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#logo {
+  display: flex;
+  margin: auto;
+  margin-left: 10px;
+}
+
+#logo h1 {
+  font-weight: bold;
+}
+
+#logoimg img {
+  width: 40px;
+  height: 40px;
+  width: fit-content;
+}
+
+#nomelogo {
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.30rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(237, 167, 16);
+  border-radius: 10px;
+}
+
+.area-mapadosite {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#lista {
+  list-style: none;
+  height: fit-content;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Righteous', cursive;
+  margin: auto;
+  padding: 0PX;
+  text-align: center;
+
+}
+
+#lista li {
+  color: aliceblue;
+  padding: 10px;
+  text-align: center;
+}
+
+#lista a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#lista li:hover {
+  background-color: rgb(35, 2, 35);
+  border: solid rgb(237, 167, 16) 3px;
+  border-radius: 15px;
+}
+
+/*/////////////////////MENU////////////////////////////////////(guilherme)*/
+
+
+/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+#introduçao {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-color: rgb(19, 1, 19);
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+  background-image: url(../img/tumblr_ot4npmTtUD1uzwgsuo1_400.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#textintroduçao {
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: auto;
+  width: fit-content;
+}
+
+#textintroduçao h1 {
+  margin: auto;
+  font-size: 3em;
+  font-family: 'Righteous', cursive;
+  color: rgb(237, 167, 16);
+  font-weight: bold;
+}
+
+#smalltext {
+  font-size: 15px;
+  color: rgb(234, 142, 234);
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+}
+
+#pósintrodução {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  background-color: rgb(19, 1, 19);
+  font-size: 14px;
+  width: 90%;
+}
+
+#textbox {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  height: 90%;
+
+}
+
+#textbox p {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#box {
+  height: fit-content;
+  width: 400px;
+  margin-right: 15px;
+  flex-direction: column;
+  margin: auto;
+}
+
+.content {
+  margin: 15px;
+  padding: 15px;
+  border: white 1px solid;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-contentbox {
+  font-family: 'Baloo 2', cursive;
+  color: rgb(237, 167, 16);
+
+}
+
+.button-content {
+  margin-top: 15px;
+}
+
+.button-content button {
+  height: 40px;
+  width: 90%;
+  font-family: 'Righteous', cursive;
+  box-shadow: 3px 2px 3px white;
+  background-color: rgb(244, 241, 235);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-content button:hover{
+  box-shadow: 3px 2px 3px rgb(237, 167, 16);
+  color:rgb(234, 142, 234);
+}
+
+.text h2 {
+  margin-top: auto;
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+}
+
+/*//////////////////MAIN//////////////////////////////////////(guilherme)*/
+
+.espaço{
+  height: 20px;
+}
+
+/*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
+
+
+
+
+footer {
+  background-color: rgb(20, 1, 20);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+
+}
+
+.footer-conteudo {
+  width: 90%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+#logo-footer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#logo-footer h1 {
+  font-family: 'Righteous', cursive;
+
+}
+
+#logo-footer img {
+  height: 40px;
+  width: fit-content;
+}
+
+#container-mapa-contato {
+  border: rgb(237, 167, 16) solid 5px;
+  border-radius: 20px;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: auto;
+}
+
+#footer-mapa {
+  margin: auto;
+}
+
+#footer-mapa h5 {
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+
+}
+
+#footer-mapa p {
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+  margin: auto;
+  color: rgb(237, 167, 16);
+}
+
+#footer-contato {
+  margin: 8px auto auto auto;
+  height: fit-content;
+  width: fit-content;
+}
+
+#footer-contato h5 {
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+}
+
+#footer-contato img {
+  border-radius: 5px;
+  height: 40px;
+  width: fit-content;
+}
+
+/*/////////////////////////FOOTER/////////////////////////////(guilherme)*/
+
+
+
+
+/*////////////////////////responsividades(guilherme)///////////////////////////*/
+
+@media(max-width: 450px) {
+  #textintroduçao h1 {
+    font-size: 2rem;
+  }
+
+  #logo h1 {
+    font-size: 1.5rem;
+  }
+
+  #logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-footer h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 758px) {
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .area-mapadosite {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .area-mapadosite ul {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: static;
+    height: fit-content;
+    align-items: flex-start;
+  }
+
+  #logo {
+    margin-top: 17px;
+  }
+
+  .area-mapadosite.active {
+    display: flex;
+
+  }
+
+}
+
+/*////////////////////////responsividades(guilherme)///////////////////////////*/
+
+/* guilherme - fim*/
